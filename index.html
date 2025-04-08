@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaparthi Sai Prasad | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --bg-color: #f8f9fa;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --nav-bg: #1e272e;
+      --primary-color: #00cec9;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --card-bg: #1f1f1f;
+      --nav-bg: #000000;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--nav-bg);
+      padding: 1rem 0;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    nav ul.nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.3s;
+      padding: 0.5rem;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary-color);
+      transform: scale(1.05);
+    }
+
+    #toggle-theme {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    main {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      padding: 2rem;
+      background: var(--card-bg);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--text-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-photo {
+      width: 160px;
+      border-radius: 50%;
+      border: 4px solid var(--text-color);
+      transition: transform 0.3s;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.05);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+   
+    body.dark-mode .skills-list li {
+      background: #2d3436;
+    }
+     
+  .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .skills-list li {
+      background: #ecf0f1;
+      padding: 0.6rem 1.2rem;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    body.dark-mode .skills-list li {
+      background: #2d3436;
+    }
+
+    .skills-list li:hover {
+      background: #dff9fb;
+    }
+    .project, .internship {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .project img {
+      width: 80px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: var(--nav-bg);
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar container">
+      <div class="logo">Kaparthi Sai Prasad</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#internships">Internships</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="toggle-theme">🌓</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="C:\Users\Lenovo\OneDrive\Pictures\sai2.jpg" alt="Kaparthi Sai Prasad" class="profile-photo" />
+        <p>Hi, I'm Kaparthi Sai Prasad, currently pursuing MCA at Aditya University. I’m passionate about web development and backend technologies, with a strong foundation in Python and Java. I’m seeking opportunities to grow in the IT field.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>MCA (Pursuing) - Aditya University, Surampalem</li>
+        <li>B.Sc (Computers) - 85% (2021-2024) - Krishnaveni Degree College, Narasaraopet</li>
+        <li>Intermediate - 84.3% (2019-2021) - AP Model Jr. College, Dachepalli</li>
+        <li>S.S.C - 90% (2018-2019) - AP Model School, Dachepalli</li>
+      </ul>
+    </section>
+  <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><img src="https://img.icons8.com/color/48/000000/python.png" width="24"/> Python</li>
+        <li><img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" width="24"/> Java</li>
+        <li><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" width="24"/> HTML</li>
+        <li><img src="https://img.icons8.com/color/48/000000/css3.png" width="24"/> CSS</li>
+      </ul>
+    </section>
+  
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="https://img.icons8.com/ios/100/atm.png" alt="ATM Project">
+        <div>
+          <h3>ATM Simulation (Python)</h3>
+          <p>Developed an ATM system for withdrawals, deposits, and balance inquiries using Python.</p>
+        </div>
+      </div>
+      <div class="project">
+       <a href="https://kaparthi-sai-prasad.github.io/adityauniversity-login/"><img src="https://img.icons8.com/ios/100/login-rounded.png" alt="Login Page"></a>
+        <div>
+          <h3>Static Login Page &nbsp<a href="https://kaparthi-sai-prasad.github.io/adityauniversity-login/">link</a></h3>
+          <p>Created a static login page for Aditya University using HTML and CSS.</p>
+        </div>
+      </div>
+    </section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li>📜 OOPs using Python - Infosys Springboard.(<a href="C:\Users\Lenovo\OneDrive\Desktop\Mern stack\HTML\portfolio\Object Oriented Programming using Python.pdf">Certificate</a>)</li>
+    <li>🏅  Young Professional Course - TCS ION Career Edge.(<a href="C:\Users\Lenovo\OneDrive\Desktop\Mern stack\HTML\portfolio\it for non it.pdf">Certificate)</a></li>
+    <li>💻 Python Development Internship - OctaNet Pvt. Ltd.(<a href="C:\Users\Lenovo\OneDrive\Desktop\Mern stack\HTML\portfolio\octanet.pdf">Certificate</a>)</li>
+    <li>🧑‍💻 Python Full Stack Long-Term Internship - ExcelR Edtech Pvt. Ltd.(<a href="C:\Users\Lenovo\OneDrive\Desktop\Mern stack\HTML\portfolio\EXCELR-191695-Kaparthi Sai Prasad.pdf">Certificate</a>)</li>
+    <li>🧾 Programming Fundamentals using Python - Infosys Springboard.(<a href="C:\Users\Lenovo\OneDrive\Desktop\Mern stack\HTML\portfolio\programming using python.pdf">Certificate</a>)</li>
+    <li>📚 Introduction to NoSQL Databases - Infosys Springboard.(<a href="C:\Users\Lenovo\OneDrive\Desktop\Mern stack\HTML\portfolio\Introduction to NoSQL databases.pdf">Certificate</a>)</li>
+  </ul>
+</section>
+
+
+
+    <section id="internships">
+      <h2>Internships</h2>
+      <div class="internship">
+        <h3>Python Development Internship - OctaNet Pvt. Ltd.(<a href="C:\Users\Lenovo\OneDrive\Desktop\Mern stack\HTML\portfolio\octanet.pdf">Certificate</a>)</h3>
+        <p>1 Month (Virtual). Developed Python-based applications, worked on real-time projects and enhanced debugging skills.</p>
+      </div>
+      <div class="internship">
+        <h3>Python Full Stack Long-Term Internship - ExcelR Edtech Pvt. Ltd.(<a href="C:\Users\Lenovo\OneDrive\Desktop\Mern stack\HTML\portfolio\EXCELR-191695-Kaparthi Sai Prasad.pdf">Certificate</a>)</h3>
+        <p>Covered HTML, CSS, JavaScript and Python backend. Built real-time full stack applications using project-based learning.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> kaparthisai1111@gmail.com</p>
+      <p><i class="fas fa-phone"></i> 8374673262</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kaparthi Sai Prasad</p>
+  </footer>
+
+  <script>
+    document.getElementById('toggle-theme').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
